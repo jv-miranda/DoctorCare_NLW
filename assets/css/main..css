@@ -1,0 +1,126 @@
+/* FONT-SIZE RESET AND COLOR PALLETE */
+:root {
+  font-size: 62.5%;
+
+  /* PRIMARY COLORS */
+  --brand-green: hsl(170, 100%, 26%);
+  --brand-green-light: hsl(148, 23%, 89%);
+  --brand-green-light-02: hsl(180, 14%, 97%);
+  --brand-beige: hsl(39, 100%, 97%);
+  --brand-green-hover: hsl(170, 100%, 14%);
+
+  /* SECONDARY COLORS */
+  --gray-headline:#212529;
+  --gray-paragraph: #495057;
+  --white: #FFFFFF;
+}
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
+  background-color: var(--brand-green-light);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4.1rem;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.intro_h4 {
+  color: var(--brand-green);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  font-size: 1.4rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.4rem;
+}
+
+h1 {
+  color: var(--gray-headline);
+  font-size: 3.4rem;
+  line-height: 130%;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+}
+
+#p1 {
+  color: var(--gray-paragraph);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 150%;
+  margin-bottom: 3.2rem;
+}
+
+
+.button_01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  padding: 1.6rem 3.2rem;
+  width: 26.3rem;
+  height: 5.2rem;
+  gap: 1.6rem;
+  background-color: var(--brand-green);
+  border-radius: 4rem;
+  color: var(--white);
+  margin-bottom: 6rem;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.8rem;
+}
+
+.main_img {
+  width: 26.164rem;
+  height: 34.2rem;
+}
+
+.main_card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+  background-color: var(--brand-beige);
+  border-radius: 0.6rem;
+  padding: 4rem
+}
+
+.main_card_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.main_card_h3 {
+  font-size: 4.8rem;
+  color: var(--gray-headline);
+}
+
+.main_card_p {
+  font-size: 1.6rem;
+  color: var(--brand-green);
+}
