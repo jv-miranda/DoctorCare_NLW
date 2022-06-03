@@ -1,0 +1,114 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: var(--header-height);
+  padding-inline: 2.4rem;
+  position: fixed;
+  transition: 0.6s;
+}
+
+.logo {
+  width: 13.286rem;
+  height: 1.738rem;
+}
+
+.header_button_open,
+.header_button_close,
+.schedule_button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header_button_open_svg {
+  width: 4rem;
+  height: 4rem;
+}
+
+header.onScroll {
+  background-color: var(--brand-green);
+}
+
+/* MENU EXPANDED */
+
+body.menu_expanded {
+  overflow: hidden;
+}
+
+nav,
+.header_button_close,
+body.menu_expanded .header_button_open {
+  display: none;
+}
+
+body.menu_expanded nav,
+body.menu_expanded .header_button_close {
+  display: block;
+}
+
+body.menu_expanded nav {
+  padding: calc(6rem + var(--header-height));
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--brand-green);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.schedule_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem 3.2rem;
+  width: 27.4rem;
+  height: 5.5rem;
+  background-color: var(--white);
+  border-radius: 4rem;
+  margin-top: 4.8rem;
+  margin-bottom: 8rem;
+}
+
+.schedule_button a {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  text-transform: uppercase;
+  color: var(--brand-green);
+}
+
+.social_links {
+  display: flex;
+  gap: 3.2rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+nav ul li a {
+  width: 6.3rem;
+  height: 3.1rem;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+  color: var(--white);
+  text-align: center;
+}
+
+body.menu_expanded .logo,
+body.menu_expanded .header_button_close {
+  position: relative;
+  z-index: 100;
+}

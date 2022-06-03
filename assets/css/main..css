@@ -10,9 +10,12 @@
   --brand-green-hover: hsl(170, 100%, 14%);
 
   /* SECONDARY COLORS */
-  --gray-headline:#212529;
+  --gray-headline: #212529;
   --gray-paragraph: #495057;
-  --white: #FFFFFF;
+  --white: #ffffff;
+
+  /* MEASUREMENTS  */
+  --header-height: 7.2rem;
 }
 
 /* CSS RESET */
@@ -23,18 +26,30 @@
   font-family: 'DM Sans', sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   font-size: 1.6rem;
-  margin-left: 2.4rem;
-  margin-right: 2.4rem;
   background-color: var(--brand-green-light);
+  overflow: overlay;
 }
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 4.1rem;
+  padding-top: calc(4.1rem + var(--header-height));
+}
+
+main,
+section {
+  margin-inline: 2.4rem;
 }
 
 .intro {
@@ -72,7 +87,6 @@ h1 {
   margin-bottom: 3.2rem;
 }
 
-
 .button_01 {
   display: flex;
   justify-content: center;
@@ -104,23 +118,25 @@ h1 {
   align-items: center;
   gap: 6rem;
   background-color: var(--brand-beige);
+  padding-block: 4rem;
+  border: 0.1rem solid var(--brand-green-light);
   border-radius: 0.6rem;
-  padding: 4rem
 }
 
-.main_card_content {
+.main_card .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.4rem;
+  text-align: center;
 }
 
-.main_card_h3 {
+.main_card .h3 {
   font-size: 4.8rem;
   color: var(--gray-headline);
 }
 
-.main_card_p {
+.main_card .p {
   font-size: 1.6rem;
   color: var(--brand-green);
 }
