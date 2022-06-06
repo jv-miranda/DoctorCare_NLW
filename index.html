@@ -9,6 +9,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/main..css" />
     <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/services.css" />
+    <link rel="stylesheet" href="assets/css/about.css" />
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,7 +22,7 @@
   </head>
   <body onscroll="headerOnScroll()">
     <header>
-      <a href="index.html">
+      <a href="#home">
         <img class="logo" src="assets/svgs/logo.svg" alt="" />
       </a>
 
@@ -42,9 +44,9 @@
 
       <nav class="menu">
         <ul>
-          <li><a target="_blank" href="#">Início</a></li>
-          <li><a target="_blank" href="#">Sobre</a></li>
-          <li><a target="_blank" href="#">Serviços</a></li>
+          <li><a onclick="closeMenu()" href="#home">Início</a></li>
+          <li><a href="#services" onclick="closeMenu()">Serviços</a></li>
+          <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
         </ul>
 
         <button class="schedule_button">
@@ -71,7 +73,7 @@
       </nav>
     </header>
 
-    <main>
+    <main id="home">
       <div class="intro">
         <h4 class="intro_h4">BOAS-VINDAS A DOCTORCARE 👋</h4>
         <h1>Assistência médica simplificada para todos</h1>
@@ -107,7 +109,86 @@
       </div>
     </main>
 
+    <section id="services_section_underlay">
+      <div id="services" class="sections">
+        <div class="services_intro">
+          <h4>Serviços</h4>
+          <h1>Como podemos ajudá-lo a se sentir melhor?</h1>
+        </div>
+        <div class="services_cards">
+          <span>
+            <img src="assets/svgs/checked_icon.svg" alt="" />
+            <h3>Problemas Digestivos</h3>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim.
+            </p>
+          </span>
+          <span>
+            <img src="assets/svgs/checked_icon.svg" alt="" />
+            <h3>Saúde Hormonal</h3>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim.
+            </p>
+          </span>
+          <span>
+            <img src="assets/svgs/checked_icon.svg" alt="" />
+            <h3>Bem-estar Mental</h3>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim.
+            </p>
+          </span>
+          <span>
+            <img src="assets/svgs/checked_icon.svg" alt="" />
+            <h3>Cuidados Pediátricos</h3>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim.
+            </p>
+          </span>
+          <span>
+            <img src="assets/svgs/checked_icon.svg" alt="" />
+            <h3>Autoimune e Inflamação</h3>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim.
+            </p>
+          </span>
+          <span>
+            <img src="assets/svgs/checked_icon.svg" alt="" />
+            <h3>Saúde do Coração</h3>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim.
+            </p>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="sections">
+        <div class="text">
+          <h4>SOBRE NÓS</h4>
+          <h2>Entenda quem somos e por que existimos</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil corporis maxime nostrum distinctio ad eaque, quasi quas quaerat iusto ducimus autem reprehenderit deserunt odio ex, dolor ullam. Maxime, magni. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, tempora dolor accusamus repudiandae veritatis porro obcaecati cumque neque debitis sunt facere numquam eos iste, nobis laudantium. Eligendi soluta voluptatum fugit.
+          </p>
+        </div>
+
+        <img
+          src="assets/imgs/about_img.png"
+          alt="Médico sorridente atendendo uma criança juntamente com sua mãe."
+        />
+      </div>
+    </section>
+    <!-- ScrollReveal Lib -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <!-- JAVASCRIPT -->
+    <script src="assets/js/scrollReveal.js"></script>
     <script src="assets/js/header.js"></script>
   </body>
 </html>

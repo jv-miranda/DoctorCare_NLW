@@ -34,6 +34,10 @@ a {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 1.6rem;
   background-color: var(--brand-green-light);
@@ -48,7 +52,7 @@ main {
 }
 
 main,
-section {
+.sections {
   margin-inline: 2.4rem;
 }
 

@@ -1,0 +1,72 @@
+#services_section_underlay {
+  background-color: var(--brand-green-light-02);
+  padding-top: 21.8rem;
+  z-index: -4;
+  position: relative;
+  top: -21.8rem;
+}
+
+#services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.services_intro {
+  margin-inline: 3.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-top: 10rem;
+  margin-bottom: 6rem;
+}
+
+.services_intro h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.9rem;
+  text-align: center;
+}
+
+.services_intro h4 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 150%;
+  letter-spacing: 0.08rem;
+  color: var(--brand-green);
+  text-transform: uppercase;
+}
+
+.services_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  margin-bottom: 10rem;
+}
+
+.services_cards span {
+  padding: 2.4rem;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  gap: 1.6rem;
+  border: 0.1rem solid #dce9e2;
+  border-radius: 0.6rem;
+}
+
+.services_cards h3 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+}
+
+.services_cards p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: var(--gray-paragraph);
+}

@@ -1,9 +1,8 @@
 let logo = document.querySelector(`.logo`)
+let header = document.querySelector(`header`)
+let header_button_open = document.querySelector(`.header_button_open_svg`)
 
 function headerOnScroll() {
-  let header = document.querySelector(`header`)
-  let header_button_open = document.querySelector(`.header_button_open_svg`)
-
   if (scrollY == 0) {
     header.classList.remove(`onScroll`)
     logo.setAttribute(`src`, `assets/svgs/logo.svg`)
@@ -25,5 +24,5 @@ function openMenu() {
 
 function closeMenu() {
   document.body.classList.remove(`menu_expanded`)
-  logo.setAttribute(`src`, `assets/svgs/logo.svg`)
+  headerOnScroll()
 }

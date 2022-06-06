@@ -1,0 +1,36 @@
+#about {
+  background-color: var(--brand-beige);
+  position: relative;
+  top: -21.8rem;
+}
+
+#about .sections {
+  padding-block: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#about h4 {
+  margin-bottom: 1.6rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 150%;
+  letter-spacing: 0.08rem;
+  color: var(--brand-green);
+}
+
+#about h2 {
+  margin-bottom: 2.4rem;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.9rem;
+  color: var(--gray-headline);
+}
+
+#about p {
+  margin-bottom: 6rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: var(--gray-paragraph);
+}
