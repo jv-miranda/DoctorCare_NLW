@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/services.css" />
     <link rel="stylesheet" href="assets/css/about.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="assets/css/footer.css">
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,15 +45,17 @@
       </button>
 
       <nav class="menu">
-        <ul>
+        <ul class="nav_01">
           <li><a onclick="closeMenu()" href="#home">Início</a></li>
           <li><a href="#services" onclick="closeMenu()">Serviços</a></li>
           <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
         </ul>
 
-        <button class="schedule_button">
-          <a href="">Agende sua Consulta</a>
-        </button>
+        <a href="https://wa.me/5521985223854" target="_blank">
+          <button class="schedule_button">
+            <p href="">Agende sua Consulta</p>
+          </button>
+        </a>
 
         <ul class="social_links">
           <li>
@@ -81,10 +85,12 @@
           Os médicos da DoctorCare vão além dos sintomas para tratar a causa
           raiz de sua doença e proporcionar uma cura a longo prazo.
         </p>
-        <button class="button_01">
-          <img src="assets/svgs/whatsapp.svg" alt="" />
-          <p>Agende sua consulta</p>
-        </button>
+        <a href="#contact">
+          <button class="button_01">
+            <img src="assets/svgs/whatsapp.svg" alt="" />
+            <p>Agende sua consulta</p>
+          </button>
+        </a>
       </div>
 
       <img
@@ -174,7 +180,13 @@
           <h4>SOBRE NÓS</h4>
           <h2>Entenda quem somos e por que existimos</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil corporis maxime nostrum distinctio ad eaque, quasi quas quaerat iusto ducimus autem reprehenderit deserunt odio ex, dolor ullam. Maxime, magni. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, tempora dolor accusamus repudiandae veritatis porro obcaecati cumque neque debitis sunt facere numquam eos iste, nobis laudantium. Eligendi soluta voluptatum fugit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            nihil corporis maxime nostrum distinctio ad eaque, quasi quas
+            quaerat iusto ducimus autem reprehenderit deserunt odio ex, dolor
+            ullam. Maxime, magni. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Ratione, tempora dolor accusamus repudiandae
+            veritatis porro obcaecati cumque neque debitis sunt facere numquam
+            eos iste, nobis laudantium. Eligendi soluta voluptatum fugit.
           </p>
         </div>
 
@@ -184,6 +196,65 @@
         />
       </div>
     </section>
+
+    <section id="contact">
+      <div class="sections">
+        <div class="text">
+          <h2>Entre em contato com a gente!</h2>
+          <ul>
+            <li>
+              <img src="assets/svgs/map_icon.svg" alt="" />
+              <p>R. Amauri Souza, 346</p>
+            </li>
+            <li>
+              <img src="assets/svgs/mail_icon.svg" alt="" />
+              <p>contato@doctorcare.com</p>
+            </li>
+          </ul>
+          <a href="https://wa.me/5521985223854" target="_blank">
+            <button class="button_01">
+              <img src="assets/svgs/whatsapp.svg" alt="" />
+              <p>Agende sua consulta</p>
+            </button>
+          </a>
+        </div>
+
+        <img
+          src="assets/imgs/contact_img.png"
+          alt="Rapaz negro sorridente sentando usando seu smartphone."
+        />
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="sections">
+        <div class="text">
+          <img src="assets/svgs/logo_onscroll.svg" alt="" />
+          <span>
+            <p>©2021 Beautysalon.</p>
+            <p>Todos os direitos reservados.</p>
+          </span>
+        </div>
+
+        <ul class="social_links" id="social_links">
+          <li>
+            <a target="_blank" href=""
+              ><img src="assets/svgs/instagram 1.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href=""
+              ><img src="assets/svgs/facebook 1.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href=""
+              ><img src="assets/svgs/youtube 1.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <!-- ScrollReveal Lib -->
     <script src="https://unpkg.com/scrollreveal"></script>
 

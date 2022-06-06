@@ -97,8 +97,6 @@ h1 {
   align-items: center;
   justify-content: center;
   padding: 1.6rem 3.2rem;
-  width: 26.3rem;
-  height: 5.2rem;
   gap: 1.6rem;
   background-color: var(--brand-green);
   border-radius: 4rem;
@@ -108,6 +106,11 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.8rem;
+  transition: 0.2s;
+}
+
+.button_01:hover {
+  background-color: var(--brand-green-hover);
 }
 
 .main_img {

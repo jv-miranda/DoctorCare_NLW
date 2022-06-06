@@ -12,5 +12,11 @@ ScrollReveal({
 .services_cards span,
 #about .sections,
 #about .text,
-#about img
+#about img,
+#contact .sections,
+#contact .text,
+#contact img,
+#footer sections,
+#footer .text,
+#footer .social_links
 `)

@@ -74,20 +74,29 @@ body.menu_expanded nav {
   justify-content: center;
   align-items: center;
   padding: 1.6rem 3.2rem;
-  width: 27.4rem;
-  height: 5.5rem;
   background-color: var(--white);
   border-radius: 4rem;
   margin-top: 4.8rem;
   margin-bottom: 8rem;
+  border: 0.1rem solid var(--brand-green);
+  transition: 0.2s;
 }
 
-.schedule_button a {
+.schedule_button:hover {
+  background-color: var(--brand-green);
+  border: 0.1rem solid var(--white);
+}
+
+.schedule_button p {
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 2.3rem;
   text-transform: uppercase;
   color: var(--brand-green);
+}
+
+.schedule_button:hover p {
+  color: var(--white);
 }
 
 .social_links {

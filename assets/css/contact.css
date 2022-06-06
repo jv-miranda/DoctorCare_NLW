@@ -1,0 +1,38 @@
+#contact {
+  background-color: var(--white);
+  padding-block: 10rem;
+}
+
+#contact .sections {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact .text {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+#contact .text h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.9rem;
+  color: var(--gray-headline);
+}
+
+#contact .text ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+#contact .text ul li {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: var(--gray-headline);
+}
