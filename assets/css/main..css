@@ -147,3 +147,29 @@ h1 {
   font-size: 1.6rem;
   color: var(--brand-green);
 }
+
+#pageUp,
+body.menu_expanded #pageUp {
+  opacity: 0;
+  transition: 400ms;
+  visibility: hidden;
+  transform: translateY(100%);
+}
+
+#pageUp.visible {
+  position: fixed;
+  right: 2.5rem;
+  bottom: 1rem;
+  z-index: 90;
+  opacity: 1;
+  visibility: visible;
+  transition: 400ms;
+  transform: translateY(0%);
+}
+
+@media (min-width: 550px) {
+  main,
+  .sections {
+    margin-inline: 8rem;
+  }
+}

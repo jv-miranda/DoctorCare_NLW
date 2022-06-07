@@ -51,6 +51,7 @@ body.menu_expanded .header_button_close {
 
 nav {
   transform: translateY(100%);
+  transition: 700ms;
 }
 
 body.menu_expanded nav {

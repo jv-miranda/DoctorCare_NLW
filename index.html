@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/services.css" />
     <link rel="stylesheet" href="assets/css/about.css" />
     <link rel="stylesheet" href="assets/css/contact.css" />
-    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/footer.css" />
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,7 +22,7 @@
       rel="stylesheet"
     />
   </head>
-  <body onscroll="headerOnScroll()">
+  <body>
     <header>
       <a href="#home">
         <img class="logo" src="assets/svgs/logo.svg" alt="" />
@@ -51,7 +51,7 @@
           <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
         </ul>
 
-        <a href="https://wa.me/5521985223854" target="_blank">
+        <a onclick="closeMenu()" href="#contact">
           <button class="schedule_button">
             <p href="">Agende sua Consulta</p>
           </button>
@@ -114,6 +114,10 @@
         </div>
       </div>
     </main>
+
+    <a href="#home" id="pageUp" class="">
+      <img src="assets/svgs/page_up_icon.svg" alt="" />
+    </a>
 
     <section id="services_section_underlay">
       <div id="services" class="sections">
@@ -231,7 +235,7 @@
         <div class="text">
           <img src="assets/svgs/logo_onscroll.svg" alt="" />
           <span>
-            <p>©2021 Beautysalon.</p>
+            <p>©2022 DoctorCare.</p>
             <p>Todos os direitos reservados.</p>
           </span>
         </div>
