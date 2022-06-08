@@ -23,12 +23,16 @@
     />
   </head>
   <body>
-    <header>
+    <header id="header">
       <a href="#home">
         <img class="logo" src="assets/svgs/logo.svg" alt="" />
       </a>
 
-      <button class="header_button_open" onclick="openMenu()">
+      <button
+        id="header_button_open"
+        class="header_button_open"
+        onclick="openMenu()"
+      >
         <img
           class="header_button_open_svg"
           src="assets/svgs/header_button_open.svg"
@@ -36,7 +40,11 @@
         />
       </button>
 
-      <button onclick="closeMenu()" class="header_button_close">
+      <button
+        onclick="closeMenu()"
+        id="header_button_close"
+        class="header_button_close"
+      >
         <img
           class="header_button_close_svg"
           src="assets/svgs/header_button_close.svg"
@@ -44,20 +52,31 @@
         />
       </button>
 
-      <nav class="menu">
-        <ul class="nav_01">
-          <li><a onclick="closeMenu()" href="#home">Início</a></li>
-          <li><a href="#services" onclick="closeMenu()">Serviços</a></li>
-          <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
+      <nav class="menu" id="menu">
+        <ul id="nav_01" class="nav_01">
+          <li>
+            <a class="nav_01_link" onclick="closeMenu()" href="#home">Início</a>
+          </li>
+          <li>
+            <a class="nav_01_link" href="#services" onclick="closeMenu()"
+              >Serviços</a
+            >
+          </li>
+          <li>
+            <a class="nav_01_link" onclick="closeMenu()" href="#about">Sobre</a>
+          </li>
         </ul>
 
-        <a onclick="closeMenu()" href="#contact">
-          <button class="schedule_button">
-            <p href="">Agende sua Consulta</p>
-          </button>
+        <a
+          id="schedule_button"
+          class="schedule_button"
+          onclick="closeMenu()"
+          href="#contact"
+        >
+          Agende sua Consulta
         </a>
 
-        <ul class="social_links">
+        <ul id="social_links" class="social_links">
           <li>
             <a target="_blank" href=""
               ><img src="assets/svgs/instagram 1.svg" alt=""
@@ -78,26 +97,30 @@
     </header>
 
     <main id="home">
-      <div class="intro">
-        <h4 class="intro_h4">BOAS-VINDAS A DOCTORCARE 👋</h4>
-        <h1>Assistência médica simplificada para todos</h1>
-        <p id="p1">
-          Os médicos da DoctorCare vão além dos sintomas para tratar a causa
-          raiz de sua doença e proporcionar uma cura a longo prazo.
-        </p>
-        <a href="#contact">
-          <button class="button_01">
-            <img src="assets/svgs/whatsapp.svg" alt="" />
-            <p>Agende sua consulta</p>
-          </button>
-        </a>
+      <div class="col_a">
+        <div class="intro">
+          <h4 class="intro_h4">BOAS-VINDAS A DOCTORCARE 👋</h4>
+          <h1>Assistência médica simplificada para todos</h1>
+          <p id="p1">
+            Os médicos da DoctorCare vão além dos sintomas para tratar a causa
+            raiz de sua doença e proporcionar uma cura a longo prazo.
+          </p>
+          <a href="#contact">
+            <button class="button_01">
+              <img src="assets/svgs/whatsapp.svg" alt="" />
+              <p>Agende sua consulta</p>
+            </button>
+          </a>
+        </div>
       </div>
 
-      <img
-        class="main_img"
-        src="assets/imgs/main_img.png"
-        alt="Mulher negra vestindo moletom verde sorrindo."
-      />
+      <div class="col_b">
+        <img
+          class="main_img"
+          src="assets/imgs/main_img.png"
+          alt="Mulher negra vestindo moletom verde sorrindo."
+        />
+      </div>
 
       <div class="main_card">
         <div class="content" id="card_content_01">

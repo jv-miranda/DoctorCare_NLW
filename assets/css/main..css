@@ -41,7 +41,6 @@ html {
 body {
   font-size: 1.6rem;
   background-color: var(--brand-green-light);
-  overflow: overlay;
 }
 
 main {
@@ -167,9 +166,52 @@ body.menu_expanded #pageUp {
   transform: translateY(0%);
 }
 
+/* MEDIA QUERIES */
 @media (min-width: 550px) {
   main,
   .sections {
     margin-inline: 8rem;
+  }
+}
+
+@media (min-width: 669px) {
+  main,
+  .sections {
+    margin-inline: 10rem;
+  }
+}
+
+@media (min-width: 1023px) {
+  main,
+  .sections {
+    margin-inline: 12.3rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 60.5rem 1fr;
+    grid-template-areas:
+      'A B'
+      'C C';
+  }
+
+  main .col_a {
+    grid-area: A;
+  }
+
+  main .intro {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  main .col_b {
+    grid-area: B;
+  }
+
+  main .main_card {
+    grid-area: C;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6rem 12rem;
   }
 }
