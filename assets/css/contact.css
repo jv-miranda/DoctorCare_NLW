@@ -36,3 +36,36 @@
   line-height: 150%;
   color: var(--gray-headline);
 }
+
+@media (min-width: 1023px) {
+  #contact .text h2 {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 5.2rem;
+  }
+
+  #contact .sections {
+    padding-block: 16rem;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 14.1rem;
+  }
+
+  #contact .contact_img {
+    width: 60%;
+    height: 60%;
+  }
+
+  #contact .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  #contact .contact_img {
+    width: 57.5rem;
+    height: 37.9rem;
+  }
+}

@@ -29,3 +29,14 @@ footer .sections span {
 .social_links {
   justify-content: flex-start;
 }
+
+@media (min-width: 1023px) {
+  #footer {
+    padding-block: 8rem;
+  }
+
+  #footer .sections {
+    display: flex;
+    justify-content: space-between;
+  }
+}

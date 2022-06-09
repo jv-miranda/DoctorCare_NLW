@@ -1,10 +1,10 @@
 #services_section_underlay {
   background-color: var(--brand-green-light-02);
-  padding-top: 21.8rem;
+  padding-top: 30rem;
   z-index: -4;
   position: relative;
-  top: -21.8rem;
-  margin-bottom: -21.8rem;
+  top: -30rem;
+  margin-bottom: -30rem;
 }
 
 #services {
@@ -70,4 +70,33 @@
   font-size: 1.6rem;
   line-height: 150%;
   color: var(--gray-paragraph);
+}
+
+@media (min-width: 1023px) {
+  #services_section_underlay {
+    padding-top: 10rem;
+    top: -10rem;
+    margin-bottom: -10rem;
+  }
+
+  .services_intro {
+    margin-top: 16rem;
+  }
+
+  .services_intro h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 5.2rem;
+  }
+
+  .services_cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 16rem;
+  }
+
+  .services_cards span {
+    width: 30%;
+    flex-grow: 1;
+  }
 }

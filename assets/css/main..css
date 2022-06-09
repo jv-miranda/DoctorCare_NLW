@@ -112,6 +112,12 @@ h1 {
   background-color: var(--brand-green-hover);
 }
 
+main .flexbox_01 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .main_img {
   width: 26.164rem;
   height: 34.2rem;
@@ -182,36 +188,58 @@ body.menu_expanded #pageUp {
 }
 
 @media (min-width: 1023px) {
-  main,
-  .sections {
-    margin-inline: 12.3rem;
-  }
-
   main {
-    display: grid;
-    grid-template-columns: 60.5rem 1fr;
-    grid-template-areas:
-      'A B'
-      'C C';
-  }
-
-  main .col_a {
-    grid-area: A;
-  }
-
-  main .intro {
-    text-align: left;
-    align-items: flex-start;
-  }
-
-  main .col_b {
-    grid-area: B;
+    align-items: initial;
   }
 
   main .main_card {
-    grid-area: C;
     flex-direction: row;
     justify-content: space-between;
     padding: 6rem 12rem;
+    gap: initial;
+  }
+
+  main h1 {
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 130%;
+  }
+
+  main .main_card .line {
+    width: 0.1rem;
+    height: 8.3rem;
+    background-color: var(--brand-green);
+    opacity: 50%;
+  }
+
+  main .flexbox_01 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  main .intro {
+    align-items: flex-start;
+    text-align: left;
+    width: 60.5rem;
+    margin: 0;
+    justify-content: center;
+  }
+
+  main .intro button {
+    margin-bottom: 0;
+  }
+
+  main .main_img {
+    width: auto;
+    height: auto;
+    position: relative;
+  }
+}
+
+@media (min-width: 1365) {
+  main,
+  .sections {
+    margin-inline: 12.3rem;
   }
 }

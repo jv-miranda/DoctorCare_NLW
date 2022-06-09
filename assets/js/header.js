@@ -1,16 +1,12 @@
 window.addEventListener(`scroll`, OnScroll)
 
-let logo = document.querySelector(`.logo`)
-let header = document.querySelector(`header`)
-let header_button_open = document.querySelector(`.header_button_open_svg`)
-let pageUp = document.querySelector(`#pageUp`)
-
 function OnScroll() {
-  ChangeHeaderStyleOnScroll()
-  ShowPageUpButtonOnScroll()
+  changeHeaderStyleOnScroll()
+  showPageUpButtonOnScroll()
+  // activateMenuAtCurrentSection()
 }
 
-function ChangeHeaderStyleOnScroll() {
+function changeHeaderStyleOnScroll() {
   if (scrollY == 0) {
     header.classList.remove(`onScroll`)
     logo.setAttribute(`src`, `assets/svgs/logo.svg`)
@@ -25,13 +21,27 @@ function ChangeHeaderStyleOnScroll() {
   }
 }
 
-function ShowPageUpButtonOnScroll() {
+function showPageUpButtonOnScroll() {
   if (scrollY < 400) {
     pageUp.classList.remove(`visible`)
   } else {
     pageUp.classList.add(`visible`)
   }
 }
+
+// function activateMenuAtCurrentSection() {
+//   const scrollLine = scrollY + innerHeight / 2
+  
+//   if (scrollLine >= 0 || scrollLine < services.ofsetTop) {
+//     navl01.classList.add(`active`)
+//     navl02.classList.remove(`active`)
+//     navl03.classList.remove(`active`)
+//   } else if (scrollLine >= services.ofsetTop || scrollLine < about.ofsetTop) {
+//     navl01.classList.remove(`active`)
+//     navl02.classList.add(`active`)
+//     navl03.classList.remove(`active`)
+//   }
+// }
 
 function openMenu() {
   document.body.classList.add(`menu_expanded`)

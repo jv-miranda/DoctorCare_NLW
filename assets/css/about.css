@@ -32,3 +32,28 @@
   line-height: 150%;
   color: var(--gray-paragraph);
 }
+
+@media (min-width: 1023px) {
+  #about .sections {
+    padding-block: 16rem;
+    flex-direction: row-reverse;
+    gap: 6.7rem;
+  }
+
+  #about img {
+    width: 48rem;
+    height: 41.4rem;
+  }
+
+  #about .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #about h2 {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 5.2rem;
+  }
+}

@@ -25,7 +25,7 @@
   <body>
     <header id="header">
       <a href="#home">
-        <img class="logo" src="assets/svgs/logo.svg" alt="" />
+        <img class="logo" id="logo" src="assets/svgs/logo.svg" alt="" />
       </a>
 
       <button
@@ -55,15 +55,15 @@
       <nav class="menu" id="menu">
         <ul id="nav_01" class="nav_01">
           <li>
-            <a class="nav_01_link" onclick="closeMenu()" href="#home">Início</a>
+            <a class="nav_01_link" id="navl01" onclick="closeMenu()" href="#home">Início</a>
           </li>
           <li>
-            <a class="nav_01_link" href="#services" onclick="closeMenu()"
+            <a class="nav_01_link" id="navl02" href="#services" onclick="closeMenu()"
               >Serviços</a
             >
           </li>
           <li>
-            <a class="nav_01_link" onclick="closeMenu()" href="#about">Sobre</a>
+            <a class="nav_01_link" id="navl03" onclick="closeMenu()" href="#about">Sobre</a>
           </li>
         </ul>
 
@@ -97,7 +97,7 @@
     </header>
 
     <main id="home">
-      <div class="col_a">
+      <div class="flexbox_01">
         <div class="intro">
           <h4 class="intro_h4">BOAS-VINDAS A DOCTORCARE 👋</h4>
           <h1>Assistência médica simplificada para todos</h1>
@@ -112,9 +112,7 @@
             </button>
           </a>
         </div>
-      </div>
 
-      <div class="col_b">
         <img
           class="main_img"
           src="assets/imgs/main_img.png"
@@ -127,20 +125,22 @@
           <h3 class="h3">+3.500</h3>
           <p class="p">Pacientes atendidos</p>
         </div>
+
+        <div class="line"></div>
+
         <div class="content" id="card_content_02">
           <h3 class="h3">+15</h3>
           <p class="p">Especialistas disponíveis</p>
         </div>
+
+        <div class="line"></div>
+
         <div class="content" id="card_content_03">
           <h3 class="h3">+10</h3>
           <p class="p">Anos no mercado</p>
         </div>
       </div>
     </main>
-
-    <a href="#home" id="pageUp" class="">
-      <img src="assets/svgs/page_up_icon.svg" alt="" />
-    </a>
 
     <section id="services_section_underlay">
       <div id="services" class="sections">
@@ -247,6 +247,7 @@
         </div>
 
         <img
+          class="contact_img"
           src="assets/imgs/contact_img.png"
           alt="Rapaz negro sorridente sentando usando seu smartphone."
         />
@@ -262,7 +263,7 @@
             <p>Todos os direitos reservados.</p>
           </span>
         </div>
-
+      
         <ul class="social_links" id="social_links">
           <li>
             <a target="_blank" href=""
@@ -282,6 +283,10 @@
         </ul>
       </div>
     </footer>
+
+    <a href="#home" id="pageUp" class="">
+      <img src="assets/svgs/page_up_icon.svg" alt="" />
+    </a>
     <!-- ScrollReveal Lib -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
