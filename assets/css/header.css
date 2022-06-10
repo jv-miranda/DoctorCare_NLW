@@ -125,6 +125,18 @@ body.menu_expanded .header_button_close {
   z-index: 100;
 }
 
+@media (min-width: 550px) {
+  header {
+    padding-inline: 8rem;
+  }
+}
+
+@media (min-width: 669px) {
+  header {
+    padding-inline: 10rem;
+  }
+}
+
 @media (min-width: 1023px) {
   header#header * {
     all: initial;
@@ -233,5 +245,11 @@ body.menu_expanded .header_button_close {
     background-color: var(--brand-green-hover);
     border-color: var(--brand-green-hover);
     color: var(--white);
+  }
+}
+
+@media (min-width: 1365) {
+  header {
+    padding-inline: 12.3rem;
   }
 }
