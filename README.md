@@ -7,10 +7,10 @@ This project is a landing page for a fictional medical clinic called "DoctorCare
 ## Screenshots
 
 #### Mobile Layout
-![](screenshot/mobile-layout.png)
+![](screenshots/mobile_layout.png)
 
 #### Desktop Layout
-![](screenshot/mobile-layout.png)
+![](screenshots/desktop_layout.png)
 
 
 
