@@ -1,9 +1,14 @@
+let scheduleButton = document.querySelector(`#schedule_button`)
+let header_button_open = document.querySelector(`.header_button_open_svg`)
+
 window.addEventListener(`scroll`, OnScroll)
+
+OnScroll()
 
 function OnScroll() {
   changeHeaderStyleOnScroll()
   showPageUpButtonOnScroll()
-  // activateMenuAtCurrentSection()
+  activateMenuAtCurrentSection()
 }
 
 function changeHeaderStyleOnScroll() {
@@ -29,19 +34,17 @@ function showPageUpButtonOnScroll() {
   }
 }
 
-// function activateMenuAtCurrentSection() {
-//   const scrollLine = scrollY + innerHeight / 2
-  
-//   if (scrollLine >= 0 || scrollLine < services.ofsetTop) {
-//     navl01.classList.add(`active`)
-//     navl02.classList.remove(`active`)
-//     navl03.classList.remove(`active`)
-//   } else if (scrollLine >= services.ofsetTop || scrollLine < about.ofsetTop) {
-//     navl01.classList.remove(`active`)
-//     navl02.classList.add(`active`)
-//     navl03.classList.remove(`active`)
-//   }
-// }
+function activateMenuAtCurrentSection() {
+  if (scrollY >= 0 && scrollY < 700) {
+    addActive(navl01)
+  } else if (scrollY >= 700 && scrollY < 1560.800048828125) {
+    addActive(navl02)
+  } else if (scrollY >= 1560.800048828125 && scrollY < 2316.800048828125) {
+    addActive(navl03)
+  } else if (scrollY >= 2316.800048828125) {
+    addActive(scheduleButton)
+  }
+}
 
 function openMenu() {
   document.body.classList.add(`menu_expanded`)
@@ -51,4 +54,13 @@ function openMenu() {
 function closeMenu() {
   document.body.classList.remove(`menu_expanded`)
   OnScroll()
+}
+
+function addActive(element) {
+  navl01.classList.remove(`active`)
+  navl02.classList.remove(`active`)
+  navl03.classList.remove(`active`)
+  scheduleButton.classList.remove(`active`)
+
+  element.classList.add(`active`)
 }

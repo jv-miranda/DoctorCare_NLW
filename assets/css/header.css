@@ -214,6 +214,7 @@ body.menu_expanded .header_button_close {
     font-size: 1.4rem;
     line-height: 1.8rem;
     text-align: center;
+    transition: 200ms;
   }
 
   nav #schedule_button:hover,
